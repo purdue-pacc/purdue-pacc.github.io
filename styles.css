@@ -1,0 +1,157 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--background-color); 
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAV BAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+    height: 80px;
+}
+
+/* Logo */
+nav .left img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+/* SECTION 1: Title */
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.title-section .text {
+    flex: 5;
+}
+
+/* Main Title */
+.title-section .text h2 {
+    font-size: 45px;
+    color: var(--text-color);
+}
+
+/* Section 2: Who Are We? */
+.who-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+/* Who Are We? Heading */
+.who-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.leadership-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.officer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.officer-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+.officer-info {
+    flex: 1;
+}
+
+.officer-name {
+    margin: 0;
+    font-weight: 600;
+}
+
+.officer-title {
+    margin: 0.2rem 0;
+    font-style: italic;
+}
+
+.officer-description {
+    margin: 0;
+}
+
+/* CONTACTS PAGE */
+.contact-section {
+    max-width: 700px;;
+    padding: 2rem;
+    margin: 3rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+    /* SECTION 1: Title */
+    .title-section .text h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    /* NAV BAR */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .left a span {
+        display: none;
+    }
+}
