@@ -2,54 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Us | Purdue [Club Name]</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https//fonts.googleapis.com">
-    <link rel="preconnect" href="https//fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="styles.css">
-
-    <title>PACC</title>
+    <meta name="description" content="Learn about our club, what we do, and how to join our workouts.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAV BAR -->
-    <nav>
-        <div class="left">
-            <img src="images/Logo.webp" alt="PACC logo" href="index.html">
-        </div>
-
-        <div class="right">
-            <a href="about.html">About Us</a>
-            <a href="leadership.html">Leadership</a>
-            <a href="events.html">Events</a>
-            <a href="photos.html">Photo Gallery</a>
-            <a href="contacts.html">Contact Us</a>
-    </nav>
+    <header>
+        <h1>Purdue [Club Name]</h1> <!-- TODO: Replace with actual club name -->
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="how-to-join.html">How To Join</a></li>
+                <li><a href="collab-with-us.html">Collab With Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <!-- SECTION 1: Title -->
-        <section class="title-section">
-            <!-- Title -->
-            <div class="text">
-                <h2>Parkour and Calisthenics Club</h2>
-                <p> Purdue University's #1 .....</p>
+        <section aria-labelledby="intro-video-heading">
+            <h2 id="intro-video-heading">Introduction Video</h2>
+            <p>Get a quick overview of who we are and what our workouts look like.</p>
+
+            <div>
+                <!-- TODO: Add video embed URL (e.g., YouTube) in the src attribute below -->
+                <iframe
+                    src="https://youtu.be/2T1mo6QzjrQ"
+                    title="Club introduction video"
+                    width="560"
+                    height="315"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
             </div>
-            <!-- Image -->
         </section>
 
-        <!-- SECTION 2: Who Are We? -->
-        <section id="whoAreWe" class="who-section">
-            <h2>Who Are We?</h2>
-            <div class="text">
-                We are a student organization at Purdue University dedicated to promoting the practice of parkour and calisthenics. Our mission is to create a supportive community for individuals of all skill levels, from beginners to advanced practitioners.</p>
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">Who We Are</h2>
+            <p>
+                <!-- TODO: Replace this with a real description of the club -->
+                We are a student-led club at Purdue focused on [brief description of what you do:
+                e.g., strength training, conditioning, community workouts, etc.].
+            </p>
+        </section>
+
+        <section aria-labelledby="join-cta-heading">
+            <h2 id="join-cta-heading">Interested in Joining?</h2>
+            <p>
+                As someone interested in joining the club, you probably just want to know:
+                where do I go and when should I show up?
+            </p>
+            <p>
+                We’ve made it super simple. Check out our
+                <a href="how-to-join.html">How To Join</a>
+                page for a quick 4-step process.
+            </p>
+        </section>
+
+        <section aria-labelledby="calendar-heading">
+            <h2 id="calendar-heading">Workout Schedule (or just show up!)</h2>
+            <p>
+                You’re always welcome to just show up – check the calendar below for our
+                upcoming workouts and events.
+            </p>
+
+            <div>
+                <!-- TODO: Embed calendar (e.g., Google Calendar) by adding the URL to src -->
+                <iframe
+                    src=""
+                    title="Club workout calendar"
+                    width="800"
+                    height="600"
+                    frameborder="0">
+                </iframe>
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>
+            <!-- TODO: Replace with actual contact email or info -->
+            Contact us at <a href="">[club contact email]</a> <!-- TODO: Add mailto link -->
+        </p>
+    </footer>
 </body>
 </html>
