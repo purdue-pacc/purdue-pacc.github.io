@@ -1,3 +1,8 @@
+TODO:
+ - [ ] Indicate that the discord link is a link
+ - [ ] Make responsive design a bit better on phone
+ - [ ] css/ui updates to look more modern
+ - [ ] streamlined collab process, probably just a list of information to have prepared b4 reaching out to us
 
 User stories:
 - As someone interested in joining the club, I want to find information and links so that I can show up to workouts.
